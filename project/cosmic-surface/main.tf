@@ -8,7 +8,6 @@ terraform {
   backend "gcs" {
     bucket      = "tf-mmk8s-state"
     prefix      = "terraform/state"
-    credentials = "../../token.json"
   }
 }
 

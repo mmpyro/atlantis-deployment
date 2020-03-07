@@ -1,0 +1,13 @@
+version: 3
+projects:
+- name: cosmic-surface-staging
+  dir: project/cosmic-surface
+  workflow: staging
+
+workflows:
+  staging:
+    plan:
+      steps:
+        - run: echo 'Hello World'
+        - init
+        - plan
